@@ -24,6 +24,12 @@ export const PageCollection: Collection = {
       ],
     },
     {
+      type: "string",
+      name: "body",
+      label: "Body",
+      isBody: true
+    },
+    {
       type: "object",
       list: true,
       name: "links",

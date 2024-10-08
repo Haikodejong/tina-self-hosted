@@ -1,7 +1,7 @@
 ---
 header: Get Started by editing app/page/tsx
 logo:
-  url: /next.svg
+  url: /tina.svg
   alt: NextJS
 links:
   - header: Docs
@@ -18,3 +18,4 @@ links:
     url: 'https://vercel.com/new?utm_source=create-next-app'
 ---
 
+Bie ba body

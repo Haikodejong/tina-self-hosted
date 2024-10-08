@@ -3,6 +3,7 @@
 import { PageQuery } from "../tina/__generated__/types";
 import Image from "next/image";
 import { tinaField, useTina } from "tinacms/dist/react";
+import { TinaMarkdown } from 'tinacms/dist/rich-text'
 
 export function Page(props: {
   data: PageQuery;
@@ -10,7 +11,6 @@ export function Page(props: {
   query: string;
 }) {
   const { data } = useTina(props);
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -53,6 +53,11 @@ export function Page(props: {
           height={37}
           priority
         />
+      </div>
+
+      <div data-tina-field={tinaField(data.page.body, "body")}>
+        Wat komt hier? 
+        {data.page.body}
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
