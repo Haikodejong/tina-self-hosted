@@ -55,7 +55,9 @@ export function Page(props: {
         />
       </div>
 
-      <div data-tina-field={tinaField(data.page.body, "body")}>
+      <div 
+        // @ts-ignore
+        data-tina-field={tinaField(data.page.body, "body")}>
         Wat komt hier? 
         {data.page.body}
       </div>
